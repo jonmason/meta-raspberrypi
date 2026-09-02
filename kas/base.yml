@@ -54,6 +54,7 @@ local_conf_header:
     PATCHRESOLVE = "noop"
   debug-tweaks: |
     IMAGE_FEATURES += "empty-root-password allow-empty-password allow-root-login post-install-logging"
+    IMAGE_FEATURES += "ssh-server-dropbear"
   diskmon: |
     BB_DISKMON_DIRS = "\
         STOPTASKS,${TMPDIR},1G,100K \
